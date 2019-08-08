@@ -2,10 +2,15 @@
 
 /* Added to adjust the grid so it is visible between the footer and header */ 
 div.row {
-	color: blue;
+	color: black;
 	padding-top: 5rem;
 	padding-bottom: 1rem;
 } 
+
+/* Allows the longer section to scroll */
+.scrollable {
+  overflow-y: auto;
+}
 
 /* This is for a parallax scrolling background */ 
 .parallax {
@@ -50,7 +55,7 @@ div.row {
     left: 0px;
     position: relative;
 
-    background-image: url("https://i.stack.imgur.com/1Tzky.png");
+    background-image: url("./../img/circuit.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,21 +80,21 @@ div.row {
 #slider-image-1:target ~ .image-holder
 {
     left: 0px;
-    background-image: url("https://i.stack.imgur.com/1Tzky.png");
+    background-image: url("./../img/circuit.jpg");
     opacity: 1.0;
 }
 
 #slider-image-2:target ~ .image-holder
 {
     left: -800px;;
-    background-image: url("https://i.stack.imgur.com/1Tzky.png");
+    background-image: url("./../img/computer.jpg");
     opacity: 1.0;
 }
 
 #slider-image-3:target ~ .image-holder
 {
     left: -1600px;
-    background-image: url("https://i.stack.imgur.com/1Tzky.png");
+    background-image: url("./../img/cell.jpg");
     opacity: 1.0;
 }
 
@@ -129,7 +134,7 @@ div.row {
 }
 
 .social-icons a:hover {
-  background-color: #0e4d92;
+  background-color: #6EFF6B;
 }
 
 /* 
@@ -171,45 +176,4 @@ div.row {
 
 
 
-/*
-label,
-li {
-  border-radius: 50%;
-  text-align: center;
-  width: 3em;
-  height: 3em;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-  border: none
-}
 
-label {
-  background-color: #111;
-  z-index: 5;
-  cursor: pointer;
-  font-size:1em;
-}
-
-li.slideout:nth-child(1) {
-  -webkit-transform: translateY(-10em);
-  transform: translateY(-10em)
-}
-
-li.slideout:nth-child(2) {
-  -webkit-transform: translateY(-8.6602540378em) translateX(5em);
-  transform: translateY(-8.6602540378em) translateX(5em)
-}
-
-li.slideout:nth-child(3) {
-  -webkit-transform: translateY(-5em) translateX(8.6602540378em);
-  transform: translateY(-5em) translateX(8.6602540378em)
-}
-
-li.slideout:nth-child(4) {
-  -webkit-transform: translateX(10em);
-  transform: translateX(10em)
-}
-*/
